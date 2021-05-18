@@ -134,7 +134,7 @@ function tekshir($post){
 
   $file = file_get_contents("https://t.me/".$post);
 
-  if (mb_stripos($file,"subscribers") !== false || mb_stripos($file,"subscriber") !== false  || mb_stripos($file,"members") !== false) {
+  if (mb_stripos($file,"subscribers") !== false || mb_stripos($file,"subscriber") !== false  || mb_stripos($file,"members") !== false || mb_stripos($file,"member") !== false) {
     return true;
   } else return false;
 }
